@@ -43,6 +43,7 @@ The goal of this project was to:
 * Python
 * Pandas
 * Jupyter Notebook
+* CSV Data Processing
 
 ---
 
@@ -140,6 +141,7 @@ Potential next steps:
 
 Kacper Wolak
 
-Junior Data Analyst in training
+Aspiring Data Analyst
 
-Python | SQL | Pandas | Excel
+Skills:
+Python | SQL | Pandas | Excel | Power Query
