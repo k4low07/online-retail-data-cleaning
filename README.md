@@ -1,100 +1,128 @@
-# UFC Historical Fight Analysis
+# Online Retail Data Cleaning with Python
 
 ## Project Overview
 
-This project analyzes historical UFC fight data using Excel, Power Query and Linear Regression.
+This project focuses on cleaning and preparing a real-world e-commerce dataset for further analysis using Python and Pandas.
 
-The objective was to answer business questions regarding UFC history, identify trends in fighter performance and determine which strike type is the strongest predictor of significant strikes landed.
+The dataset contains over 500,000 transaction records from an online retail store. The main objective was to identify and handle missing values, duplicate records, incorrect data types, and data quality issues to create a reliable dataset for future business analysis.
+
+---
+
+## Dataset
+
+Source: Online Retail Dataset
+
+The dataset includes:
+
+* Customer transactions
+* Product information
+* Order quantities
+* Unit prices
+* Invoice dates
+* Customer IDs
+* Country information
+
+---
+
+## Business Problem
+
+Raw business data often contains errors and inconsistencies that can negatively impact analysis and decision-making.
+
+The goal of this project was to:
+
+* Detect missing values
+* Remove duplicate records
+* Identify invalid transactions
+* Standardize data formats
+* Prepare a clean dataset for future analytics
+
+---
 
 ## Tools Used
 
-- Microsoft Excel
-- Power Query
-- Pivot Tables
-- Data Visualization
-- Linear Regression
+* Python
+* Pandas
+* Jupyter Notebook
 
-## Data Sources
+---
 
-The analysis was performed using three datasets:
+## Data Cleaning Process
 
-- UFC Fights
-- UFC Fighters
-- UFC Locations
+The following steps were performed:
 
-## Data Preparation
+### 1. Data Inspection
 
-The following data transformations were performed:
+* Loaded the dataset
+* Reviewed data structure
+* Checked data types
+* Examined missing values
 
-- Removal of duplicate records
-- Standardization of weight class names
-- Merging datasets
-- Conversion of imperial units to metric units
-- Calculation of fighter age on fight day
-- Creation of winner identification column
-- Creation of fight year variable
+### 2. Missing Values Analysis
 
-## Key Findings
+* Identified null values
+* Evaluated their impact on analysis
+* Applied appropriate cleaning methods
 
-### UFC History
+### 3. Duplicate Detection
 
-- 2122 unique fighters competed in UFC.
-- UFC organized 555 events.
-- Las Vegas hosted the largest number of events (152).
+* Searched for duplicated transactions
+* Removed duplicate records where necessary
 
-### Weight Divisions
+### 4. Data Quality Validation
 
-Most active divisions:
+* Checked for incorrect quantities
+* Reviewed pricing anomalies
+* Investigated unusual transactions
 
-1. Lightweight – 1056 fights
-2. Welterweight – 1050 fights
-3. Middleweight – 788 fights
+### 5. Final Dataset Preparation
 
-### Top Fighters
+* Cleaned and standardized the dataset
+* Prepared data for future exploratory analysis
 
-Top 3 fighters by victories:
+---
 
-1. Donald Cerrone – 23 wins
-2. Demian Maia – 22 wins
-3. Jim Miller – 21 wins
+## Project Structure
 
-### Fight Outcomes
+online-retail-data-cleaning/
 
-Most common fight endings:
+├── data/
 
-- Decision - Unanimous
-- KO/TKO
-- Submission
+├── notebooks/
 
-### Statistical Analysis
+│ └── analysis.ipynb
 
-Research Question:
+├── README.md
 
-Which strike type is the strongest predictor of significant strikes landed?
+---
 
-Model:
+## Key Learnings
 
-sig_str = β0 + β1(head) + β2(body) + β3(leg)
+Through this project I practiced:
 
-Results:
+* Data cleaning techniques
+* Data quality assessment
+* Working with real-world datasets
+* Pandas data manipulation
+* Preparing datasets for analysis
 
-- R² = 0.75
-- Head strikes were the strongest predictor of significant strikes landed.
+---
 
-## Limitations
+## Future Improvements
 
-- Some fighters had missing birth dates.
-- The regression model was built only for red-corner fighters.
-- Historical records may contain incomplete information.
+Potential next steps:
 
-## Skills Demonstrated
+* Exploratory Data Analysis (EDA)
+* Customer segmentation
+* Sales trend analysis
+* Product performance analysis
+* Data visualization using Matplotlib and Seaborn
 
-- Data Cleaning
-- Data Transformation
-- Power Query
-- Data Modeling
-- Exploratory Data Analysis (EDA)
-- Data Visualization
-- Statistical Analysis
-- Linear Regression
-- Business Insight Generation
+---
+
+## Author
+
+Kacper Wolak
+
+Junior Data Analyst in training
+
+Python | SQL | Pandas | Excel
