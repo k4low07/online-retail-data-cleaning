@@ -95,6 +95,23 @@ online-retail-data-cleaning/
 
 ---
 
+## Results
+
+Original dataset:
+- 541,909 records
+
+After removing missing CustomerID:
+- 406,829 records
+
+Duplicates removed:
+- 5,225 rows
+
+Negative quantity transactions removed:
+- 8,872 rows
+
+Final cleaned dataset:
+- 392,692 records
+
 ## Key Learnings
 
 Through this project I practiced:
